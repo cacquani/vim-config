@@ -79,6 +79,7 @@ source ~/.vim/config/autotag.vim
 
 " Programming language specific conf
 source ~/.vim/config/ruby.vim
+source ~/.vim/syntax/gas.vim
 
 "" Color schemes
 " start from badwolf as a base
