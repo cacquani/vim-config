@@ -10,7 +10,7 @@ endif
 
 " Ack (Rg) configuration
 if executable('rg')
-  let g:ackprg = 'rg --vimgrep --no-heading'
+  let g:ackprg = 'rg --hidden --vimgrep --no-heading'
 
   " Alias Ack as Rg
   for command in ['Ack', 'AckAdd', 'AckFromSearch', 'LAck', 'LAckAdd', 'AckFile', 'AckHelp', 'LAckHelp', 'AckWindow', 'LAckWindow']
