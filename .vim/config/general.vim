@@ -53,7 +53,7 @@ endfunction
 
 " Colorcolumn
 set textwidth=79
-set colorcolumn=+1,+41
+set colorcolumn=+1,+21,+41
 highlight ColorColumn guibg=lightgrey
 
 " Quicker window movement
