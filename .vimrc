@@ -75,41 +75,28 @@ source ~/.vim/config/ctrlp.vim
 source ~/.vim/config/ack.vim
 
 source ~/.vim/config/ale.vim
+source ~/.vim/config/polyglot.vim
 source ~/.vim/config/autotag.vim
 
 " Programming language specific conf
 source ~/.vim/config/ruby.vim
 source ~/.vim/syntax/gas.vim
 
+" Personal mappings
+source ~/.vim/config/mappings.vim
+
+" Personal autocmd
+source ~/.vim/config/autocommands.vim
+
+" Personal abbreviations
+source ~/.vim/config/abbreviations.vim
+
 "" Color schemes
 " start from badwolf as a base
 colorscheme badwolf
 
-" To quit all files quickly - useful for quitting 'git d' by holding down on Q
-map Q :qa<CR>
-
 au FileType css setl ofu=csscomplete#CompleteCSS
 au FocusLost * :wa
-
-map VIM 0 ^
-
-" Map leader to comma
-" The default would be backslash
-let mapleader = ","
-
-" Quick togo last buffer basically
-nnoremap <leader><leader> <c-^>
-
-nmap <silent> ,qc :cclose<CR>
-nmap <silent> ,qo :copen<CR>
-
-" List Buffers
-nmap <silent> <Leader>b :CtrlPBuffer<CR>
-
-nmap <leader>w :w!<cr>
-nmap <leader>q :q<CR>
-
-abbr saop! save_and_open_page
 
 let g:multi_cursor_next_key='<C-m>'
 " let g:multi_cursor_prev_key='<C-p>'
@@ -120,3 +107,4 @@ let g:multi_cursor_next_key='<C-m>'
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+

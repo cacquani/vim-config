@@ -23,9 +23,6 @@ set cursorcolumn
 set timeout         " Do time out on mappings and others
 set timeoutlen=2000 " Wait {num} ms before timing out a mapping
 
-" Auto remove all trailing characters
-autocmd BufWritePre * :%s/\s\+$//e
-
 " Toggle between the last 2 files
 nmap <Tab> :b#<CR>
 
@@ -55,12 +52,6 @@ endfunction
 set textwidth=79
 set colorcolumn=+1,+21,+41
 highlight ColorColumn guibg=lightgrey
-
-" Quicker window movement
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
 
 " When you’re pressing Escape to leave insert mode in the terminal, it will by
 " default take a second or another keystroke to leave insert mode completely
