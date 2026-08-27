@@ -83,3 +83,17 @@ augroup javascript
   " Comment entire line
   autocmd FileType javascript nnoremap <buffer> <leader>! I// <esc>
 augroup END
+
+" Set ANSI art files
+au BufRead,BufNewFile *.ans set filetype=ansi
+augroup ansi
+  autocmd!
+  " Make sure we use the right encoding for ANSI art files
+  setlocal enc=utf-8
+  setlocal fileencoding=cp437
+  setlocal fileencodings=cp437,ucs-bom,utf8,prc
+  " Add some helpers to see the end of the line
+  setlocal virtualedit=all
+  setlocal textwidth=80
+  setlocal colorcolumn=+1
+augroup END
