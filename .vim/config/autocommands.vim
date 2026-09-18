@@ -15,6 +15,8 @@ augroup makefile
   " Comment entire line. For Makefiles, the comment must start at the beginning
   " of the line, otherwise it will just be passed to bash.
   autocmd FileType make nnoremap <buffer> <leader>! 0i# <esc>
+  " Disable virtualedit
+  setlocal virtualedit=none
 augroup END
 
 augroup markdown
@@ -24,6 +26,8 @@ augroup markdown
   autocmd FileType markdown onoremap ih= :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rkvg_"<cr>
   autocmd FileType markdown onoremap ih- :<c-u>execute "normal! ?^--\\+$\r:nohlsearch\rkvg_"<cr>
   autocmd FileType markdown onoremap ih# :<c-u>execute "normal! ?^#\\+ \r:nohlsearch\rwvg_"<cr>
+  " Disable virtualedit
+  setlocal virtualedit=none
 augroup END
 
 augroup vimscript
@@ -33,6 +37,8 @@ augroup vimscript
   autocmd FileType vim setlocal foldmethod=indent
   " Comment the current line
   autocmd FileType vim nnoremap <buffer> <leader>! I" <esc>
+  " Disable virtualedit
+  setlocal virtualedit=none
 augroup END
 
 augroup c
@@ -42,6 +48,8 @@ augroup c
   autocmd FileType c setlocal foldmethod=indent
   " Comment the current line
   autocmd FileType c nnoremap <buffer> <leader>! I// <esc>
+  " Disable virtualedit
+  setlocal virtualedit=none
 augroup END
 
 augroup ruby
@@ -51,6 +59,8 @@ augroup ruby
   autocmd FileType ruby setlocal foldmethod=indent
   " Comment entire line
   autocmd FileType ruby nnoremap <buffer> <leader>! I# <esc>
+  " Disable virtualedit
+  setlocal virtualedit=none
 augroup END
 
 augroup python
@@ -62,6 +72,8 @@ augroup python
   autocmd FileType python setlocal foldmethod=indent
   " Comment the current line
   autocmd FileType python nnoremap <buffer> <leader>! I# <esc>
+  " Disable virtualedit
+  setlocal virtualedit=none
 augroup END
 
 augroup rust
@@ -73,6 +85,8 @@ augroup rust
   autocmd FileType rust setlocal foldmethod=indent
   " Comment the entire line.
   autocmd FileType rust nnoremap <buffer> <leader>! I// <esc>
+  " Disable virtualedit
+  setlocal virtualedit=none
 augroup END
 
 augroup javascript
@@ -82,6 +96,8 @@ augroup javascript
   autocmd FileType javascript setlocal foldmethod=indent
   " Comment entire line
   autocmd FileType javascript nnoremap <buffer> <leader>! I// <esc>
+  " Disable virtualedit
+  setlocal virtualedit=none
 augroup END
 
 " Set ANSI art files
